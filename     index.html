@@ -6,7 +6,6 @@
 <title>Υπολογιστής ΚΕΠ ΑΕΝ</title>
 
 <link rel="stylesheet" href="style.css">
-
 </head>
 
 <body>
@@ -15,27 +14,38 @@
 
 <h1>Υπολογιστής ΚΕΠ ΑΕΝ</h1>
 
-<p>Επιλέξτε ΚΕΠ:</p>
+<p>Υπολογισμός Θαλάσσιας Υπηρεσίας</p>
 
-<label>
-<input type="radio" name="kep" value="1" checked>
-ΚΕΠ 1
-</label>
+<label>Ημερομηνία Επιβίβασης</label>
+<input type="date" id="embark">
 
-<br><br>
+<label>Ημερομηνία Απόλυσης</label>
+<input type="date" id="discharge">
 
-<label>
-<input type="radio" name="kep" value="2">
-ΚΕΠ 2
-</label>
+<label>Βαθμός</label>
 
-<br><br>
+<select id="rank">
+<option>Γ' Μηχανικός</option>
+<option>Β' Μηχανικός</option>
+<option>Α' Μηχανικός</option>
+<option>Δόκιμος Μηχανικός</option>
+</select>
 
-<button id="nextButton">
-Συνέχεια
+<button id="addTrip">
+Προσθήκη Ταξιδιού
 </button>
 
-<div id="content"></div>
+<h2>Ταξίδια</h2>
+
+<div id="tripList">
+Δεν υπάρχουν καταχωρημένα ταξίδια.
+</div>
+
+<button id="calculate">
+Υπολογισμός ΚΕΠ
+</button>
+
+<div id="result"></div>
 
 </div>
 
